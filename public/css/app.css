@@ -1,0 +1,121 @@
+/* 
+    Created on : 24-Jun-2016, 21:08:21
+    Author     : Harry
+*/
+
+#nav {
+    height: 100px;
+    background-color: #ff5e5b;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    width:100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#nav a, #nav a:visited, a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#nav-contents {
+    min-width: 500px;
+}
+
+#content {
+    width: 60%;
+}
+
+#nav-contents, #footer {
+    width: 70%;
+}
+
+#nav-contents, #footer, #content {
+    margin: auto auto;    
+}
+
+#footer {
+    text-align: center;
+}
+
+#wrapper, #nav {
+    min-width: 420px;
+}
+
+#content-wrapper {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    min-width: 500px;
+}
+
+#title, #nav-links, #admin-menu {
+    margin-top: 30px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px 0px 20px;
+    float: left;
+}
+
+#admin-menu{
+    float: right;
+}
+
+#title {
+    background-color: #272932;
+}
+
+#nav-links {
+    margin-left: 20px;
+}
+
+#nav-links {
+    text-align: right;
+}
+
+#content {
+    margin-top: 30px;
+}
+
+.post-title, .post-title a {
+    color: #272932;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.post {
+    font-size: 15px;
+    width: 100%;
+    min-width: 100%;
+}
+
+.post-content .btn {
+    background-color: #272932;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.post-content .btn:hover {
+    background-color: #ff5e5b;
+}
+
+pre {
+    background-color: #333;
+}
+
+#prev-next{
+    text-align: center;
+}
+
+.post-content textarea{
+    width: 100%;
+    height: 500px;
+}
+
+.post-title input, .post-date input, .post-url input {
+    width: 100%;
+}
