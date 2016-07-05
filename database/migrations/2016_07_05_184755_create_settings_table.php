@@ -23,6 +23,10 @@ class CreateSettingsTable extends Migration
             array(
                 'setting' => 'Site Title',
                 'value' => 'Your site title'
+            ),
+            array(
+                'setting' => 'Github',
+                'value' => 'http://github.com'
             )
         );
     }
