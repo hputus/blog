@@ -161,7 +161,7 @@ return [
         /*
          * View service provider
          */
-        App\Providers\ViewServiceProvider::class,
+        //App\Providers\ViewServiceProvider::class,
 
     ],
 
