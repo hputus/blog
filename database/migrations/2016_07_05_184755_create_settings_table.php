@@ -19,7 +19,7 @@ class CreateSettingsTable extends Migration
             $table->string('value',255);
         });
         
-        Schema::table('settings')->insert(
+        DB::table('settings')->insert(
             array(
                 'setting' => 'Site Title',
                 'value' => 'Your site title'
