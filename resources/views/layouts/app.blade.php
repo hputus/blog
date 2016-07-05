@@ -51,7 +51,8 @@
                 <div id="nav-links">
                     <a href="/">HOME</a> | 
                     <a href="/post/projects">PROJECTS</a> | 
-                    <a href="/post/about">ABOUT</a>
+                    <a href="/post/about">ABOUT</a> |
+                    <a href="http://github.com/hputus"><b>GITHUB</b></a>
                 </div> <!-- #nav-links -->
                 @if (Auth::check())
                 <div id="admin-menu">
