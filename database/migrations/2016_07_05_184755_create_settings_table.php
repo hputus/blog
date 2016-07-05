@@ -14,16 +14,10 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->increments('id');
+            $table->timestamps();
             $table->string('setting',255);
             $table->string('value',255);
         });
-        
-        Schema::table('settings')->insert(
-            array(
-                'setting' => 'Site Title',
-                'value' => 'The title of the site'
-            )
-        );
     }
 
     /**
