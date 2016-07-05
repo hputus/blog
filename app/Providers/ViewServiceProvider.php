@@ -14,7 +14,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if(!App::runningInConsole() ){
+        if(!\App::runningInConsole()){
             //get settings
             $settings = Setting::all();
             $viewSettings = [];
