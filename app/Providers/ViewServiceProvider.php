@@ -14,18 +14,20 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //get settings
-        $settings = Setting::all();
-        $viewSettings = [];
-        
-        //format the settings so that a blade template can easily refer to them
-        //by name rather than id.
-        foreach($settings as $setting){
-            $viewSettings[$setting->setting] = $setting->value;
+        if(!App::runningInConsole() ){
+            //get settings
+            $settings = Setting::all();
+            $viewSettings = [];
+
+            //format the settings so that a blade template can easily refer to them
+            //by name rather than id.
+            foreach($settings as $setting){
+                $viewSettings[$setting->setting] = $setting->value;
+            }
+
+
+            view()->share('settings', $viewSettings);
         }
-        
-        
-        view()->share('settings', $viewSettings);
     }
 
     /**
