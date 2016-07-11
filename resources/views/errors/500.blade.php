@@ -4,5 +4,5 @@
 
 @section('content')
 <h1>Oh dear!</h1>
-<p>Service unavailable...please <a href="/">go to the home page.</a></p>
+<p>It looks like something went wrong...please <a href="/">go to the home page.</a></p>
 @endsection
